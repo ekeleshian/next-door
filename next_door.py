@@ -15,10 +15,9 @@ password.send_keys(os.environ.get("NEXTDOOR_PASSWORD"))
 
 driver.find_element_by_id('signin_button').click()
 
-for i in range(1, 5):
+for i in range(1, 100):
 	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 	time.sleep(1.5)
-
 bag_of_text = []
 
 elements = driver.find_element_by_id('main_content').find_elements_by_xpath('//div/article[@tabindex="0"]')
@@ -34,3 +33,6 @@ for tag in elements:
 
 with open('bag-of-text-new.pkl', 'wb') as f:
 	pickle.dump(bag_of_text, f)
+
+# pickle bag_of_text each weekend
+# include time stamps in bag_of_text
