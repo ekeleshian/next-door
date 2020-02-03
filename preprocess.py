@@ -89,3 +89,5 @@ if __name__ == "__main__":
     # lda_serialize(clean_text)
     # print('pickle dump done')
     analyze_all_models(clean_text)
+
+# TODO: collect more bag_of_words each weekend, concatentate and use tf-idf -> tSNE &/or PCA to 2D --> plot
