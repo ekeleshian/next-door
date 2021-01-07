@@ -20,7 +20,7 @@ jupyter-client==5.3.4
 jupyter-core==4.6.1
 jupyterlab==1.2.6
 jupyterlab-server==1.0.6
-lxml==4.5.0
+lxml==4.6.2
 MarkupSafe==1.1.1
 mistune==0.8.4
 nbconvert==5.6.1
